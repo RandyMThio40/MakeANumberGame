@@ -1,0 +1,86 @@
+.App{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+  width:100%;
+  min-height:100vh;
+  padding: 5rem 0;
+}
+
+h1{
+  margin:1rem 0;
+}
+
+
+button[data-disabled="true"]{
+  opacity: 0.5;
+  cursor:not-allowed;
+  
+}
+
+
+.operators{
+  font-size:1.5rem;
+  margin: 1rem 0;
+}
+.difficultySetting{
+  display: flex;
+  gap:0.5rem;
+}
+.difficultySetting button:nth-child(1){
+  background-color: green;
+}
+.difficultySetting button:nth-child(2){
+  background-color: orangered;
+}
+.difficultySetting button:nth-child(3){
+  background-color: red;
+}
+
+.mainContent{
+  position:relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:1rem;
+  width:500px;
+  min-height:300px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.operands{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* width:5rem; */
+  min-width: 5rem;
+  height:5rem;
+  background-color:white;
+  color:black;
+}
+
+.operands[data-result="correct"]{
+  background-color: green;
+}
+.operands[data-result="incorrect"]{
+  background-color: red;
+}
+
+.operands span{
+  margin:auto;
+}
+
+.selected{
+  border:2px solid blue
+}
+
+#refresh{
+  position:absolute;
+  top:0;
+  right:0;
+  cursor: pointer;
+}
